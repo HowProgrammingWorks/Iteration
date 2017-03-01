@@ -1,8 +1,10 @@
 'use strict';
 
+const flag = true;
+
 label1: {
   console.log('Hello');
-  if (true) break label1;
+  if (flag) break label1;
   console.log('World');
 }
 
