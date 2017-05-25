@@ -1,8 +1,8 @@
 let flag = true
 
-print("Hello")
-
-while (!flag) {
+while (true) {
+    print("Hello")
+    if flag { break }
     print("World")
 }
 
