@@ -1,3 +1,5 @@
+//: [For-in](@previous)
+
 let flag = true
 
 while (true) {
@@ -7,3 +9,6 @@ while (true) {
 }
 
 print("There")
+
+
+//: [Continue](@next)
