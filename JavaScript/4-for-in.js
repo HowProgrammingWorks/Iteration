@@ -3,8 +3,8 @@
 const arr = [7, 10, 1, 5, 2];
 arr.field = 'Value';
 
-for (let i in arr) {
-  let value = arr[i];
+for (const i in arr) {
+  const value = arr[i];
   console.log(i, value);
 }
 
