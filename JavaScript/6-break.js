@@ -11,4 +11,3 @@ label1: {
     break label2;
   }
 }
-

@@ -1,8 +1,8 @@
 'use strict';
 
-const arr = [7, 10, 1, 5, 2];
-arr.field = 'Value';
+const numbers = [7, 10, 1, 5, 2];
+numbers.field = 'Value';
 
-for (const i of arr) {
+for (const i of numbers) {
   console.log(i);
 }
