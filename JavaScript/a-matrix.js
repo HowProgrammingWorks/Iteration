@@ -7,7 +7,7 @@ const matrix = [
   [-6, 4, 8, 2, 0],
 ];
 
-const max = (a, b) => a > b ? a : b;
+const max = (a, b) => (a > b ? a : b);
 
 const res = matrix
   .map(row => row.reduce(max))

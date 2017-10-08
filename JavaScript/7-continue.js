@@ -2,9 +2,9 @@
 
 let i = 0;
 
-label1: while (i < 10) {
+while (i < 10) {
   i++;
   console.log('Hello');
-  if (i === 5) continue label1;
+  if (i === 5) continue;
   console.log('World');
 }

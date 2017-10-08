@@ -1,6 +1,6 @@
 'use strict';
 
-const flag = true;
+const flag = false;
 
 label1: {
   console.log('Hello');
@@ -9,5 +9,7 @@ label1: {
   label2: {
     console.log('There');
     break label2;
+    console.log('Bye');
   }
+  console.log('End');
 }
