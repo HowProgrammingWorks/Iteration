@@ -2,13 +2,13 @@
 
 const flag = false;
 
-label1: {
+label1: for (let i = 0; i < 10; i++) {
   console.log('Hello');
   if (flag) break label1;
   console.log('World');
-  label2: {
+  label2: for (let j = 0; j < 10; j++) {
     console.log('There');
-    break label2;
+    break label1;
     console.log('Bye');
   }
   console.log('End');
