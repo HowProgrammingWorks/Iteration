@@ -16,6 +16,7 @@ const res1 = [7, 10, 1, 5, 2]
   .filter(x => x > 4)
   .map(f3)
   .reduce((acc, val) => acc + val);
+
 console.log(res1);
 
 [7, 10, 1, 5, 2]

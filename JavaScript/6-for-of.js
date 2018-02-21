@@ -6,13 +6,7 @@ numbers[-10] = 'Value3';
 numbers.field1 = 'Value1';
 numbers[5] = 20;
 
-for (const i in numbers) {
+for (const i of numbers) {
   const value = numbers[i];
   console.log(i, typeof(i), value);
-}
-
-let j, value;
-for (j in numbers) {
-  value = numbers[j];
-  console.log(j, value);
 }
