@@ -10,3 +10,11 @@ for (const i of numbers) {
   const value = numbers[i];
   console.log(i, typeof(i), value);
 }
+/*
+  7 'number' undefined
+  10 'number' undefined
+  1 'number' 10
+  5 'number' 20
+  2 'number' 1
+  20 'number' undefined
+*/

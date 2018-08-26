@@ -7,3 +7,7 @@ while (i < 10) {
   if (i === 5) continue;
   console.log('World');
 }
+/*
+  Hello // 10 times
+  World // 9 times (without i === 5)
+*/
