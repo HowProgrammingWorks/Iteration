@@ -4,4 +4,4 @@ let count = 0;
 const arr = [7, 10, 1, 5, 2];
 const sum = (acc, val) => (count++, acc + val);
 const res = arr.reduce(sum);
-console.log({ res, count });
+console.log({ res, count }); // { res: 25, count: 4}

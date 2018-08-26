@@ -15,3 +15,8 @@ for (i in matrix) {
     console.log(i, j, col);
   }
 }
+/*
+  0 0 7 ... 0 4 2
+  ...
+  3 0 -6 ... 3 4 0 //etc.
+*/

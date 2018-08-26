@@ -12,7 +12,7 @@ hash.fifth = 2;
 for (const key in hash) {
   const value = hash[key];
   console.log(
-    key, '\t', typeof(key), '\t',
-    value, '\t', typeof(value)
+    key, '\t', typeof(key), '\t', // first string ... fifth string //etc.
+    value, '\t', typeof(value) // 7 number ... 2 number //etc.
   );
 }
