@@ -8,5 +8,5 @@ numbers[5] = 20;
 
 for (const i of numbers) {
   const value = numbers[i];
-  console.log(i, typeof(i), value);
+  console.log(i, typeof i, value);
 }
