@@ -7,11 +7,10 @@ const matrix = [
   [-6, 4, 8, 2, 0],
 ];
 
-let i, j, row, col;
-for (i in matrix) {
-  row = matrix[i];
-  for (j in row) {
-    col = row[j];
+for (const i in matrix) {
+  const row = matrix[i];
+  for (const j in row) {
+    const col = row[j];
     console.log(i, j, col);
   }
 }
