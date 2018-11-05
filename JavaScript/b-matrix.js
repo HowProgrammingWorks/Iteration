@@ -15,10 +15,8 @@ const res = matrix
 
 console.log(res);
 
-for (const i in matrix) {
-  const row = matrix[i];
-  for (const j in row) {
-    const col = row[j];
-    console.log(i, j, col);
+for (const row of matrix) {
+  for (const item of row) {
+    console.log(item);
   }
 }
