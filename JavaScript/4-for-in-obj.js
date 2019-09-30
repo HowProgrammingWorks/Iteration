@@ -10,8 +10,8 @@ const hash = {
 hash.fifth = 2;
 
 Object.defineProperty(hash, 'newField', {
-    enumerable: false,
-    value: 'valueOfNewField'
+  enumerable: false,
+  value: 'valueOfNewField',
 });
 
 for (const key in hash) {
