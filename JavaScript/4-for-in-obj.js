@@ -9,6 +9,8 @@ const hash = {
 
 hash.fifth = 2;
 
+Object.prototype.inheritedProperty = 'inherited';
+
 for (const key in hash) {
   const value = hash[key];
   console.log(
