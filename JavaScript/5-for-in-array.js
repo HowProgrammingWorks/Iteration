@@ -6,8 +6,8 @@ numbers[-10] = 'Value3';
 numbers.field1 = 'Value1';
 numbers[5] = 20;
 Object.defineProperty(numbers, 'newField', {
-    enumerable: false,
-    value: 'valueOfNewField'
+  enumerable: false,
+  value: 'valueOfNewField',
 });
 
 for (const i in numbers) {
