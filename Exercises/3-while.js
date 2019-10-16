@@ -1,13 +1,11 @@
 'use strict';
 
 const sum = (...args) => {
-  let sum = 0;
-  let i = 0;
-  while (i < args.length) {
-    sum += args[i];
-    i++;
+  let result = 0;
+  while (args.length > 0) {
+    result += args.pop();
   }
-  return sum;
+  return result;
 };
 
 module.exports = { sum };

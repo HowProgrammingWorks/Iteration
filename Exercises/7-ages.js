@@ -1,11 +1,12 @@
 'use strict';
 
 const ages = persons => {
-  const ages = {};
-  for (const element in persons) {
-    ages[element] = persons[element]['died'] - persons[element]['born'];
+  const data = {};
+  for (const name in persons) {
+    const person = persons[name];
+    ages[name] = person.died - persons.born;
   }
-  return ages;
+  return data;
 };
 
 module.exports = { ages };

@@ -1,15 +1,15 @@
 'use strict';
 
 const max = matrix => {
-  let max = 0;
+  let result = matrix[0][0];
   for (let i = 0; i < matrix.length; i++) {
-    for (let j = 0; j < matrix[i].length; j++) {
-      //max = max <  matrix[i][j] ? matrix[i][j] : max;
-      if (max <  matrix[i][j]) max = matrix[i][j];
+    const row = matrix[i];
+    for (let j = 0; j < row.length; j++) {
+      const cell = row[j];
+      if (result < cell) result = cell;
     }
   }
-  return max;
+  return result;
 };
-
 
 module.exports = { max };
