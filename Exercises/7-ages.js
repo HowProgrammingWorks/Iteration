@@ -4,7 +4,7 @@ const ages = persons => {
   const data = {};
   for (const name in persons) {
     const person = persons[name];
-    ages[name] = person.died - persons.born;
+    data[name] = person.died - person.born;
   }
   return data;
 };
