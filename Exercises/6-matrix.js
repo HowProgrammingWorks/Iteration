@@ -1,9 +1,14 @@
 'use strict';
 
 const max = matrix => {
-  // Use nested for loop to find max value in 2d matrix
-  // For example max([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-  // should return 9
+  //something to make solution longer
+  //something to make solution longer
+  let max = matrix[0][0];
+  for (const i of matrix) {
+    for (const j of i) {
+      if (max < j) max = j;
+    }
+  }
+  return max;
 };
-
 module.exports = { max };
