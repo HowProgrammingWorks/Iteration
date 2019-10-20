@@ -5,7 +5,6 @@ const ages = persons => {
   for (const name in persons) {
     const person = persons[name];
     ages[name] = person.died - person.born;
-    console.log(ages);
   }
   return ages;
 };
