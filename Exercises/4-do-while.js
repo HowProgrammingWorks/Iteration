@@ -1,9 +1,14 @@
-'use strict';
+// eslint-disable-next-line quotes
+"use strict";
 
 const sum = (...args) => {
-  // Use do..while loop and accumulator variable
-  // to calculate sum of all given arguments
-  // For example sum(1, 2, 3) should return 6
+  let add = 0;
+  let index = args.length - 1;
+  do {
+    add += args[index];
+    index--;
+  } while (index >= 0);
+  return add;
 };
 
 module.exports = { sum };
