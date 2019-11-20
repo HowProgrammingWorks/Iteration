@@ -6,9 +6,13 @@ const range = {
   [Symbol.asyncIterator]() {
     let value = this.start;
     return {
-      next: () => Promise.resolve({
-        value,
-        done: value++ === this.end + 1
+      next: () => new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve({
+            value,
+            done: value++ === this.end + 1
+          });
+        }, 0);
       })
     };
   }
