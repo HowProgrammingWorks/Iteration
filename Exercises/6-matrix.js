@@ -7,7 +7,7 @@ const max = matrix => {
       list.push(inside);
     }
   }
-  // gggggggggggggggggggggggggggggggg
+  // find max value in list of all elements with reduce
   return list.reduce((acc, x) => acc > x ? acc : x);
 };
 
