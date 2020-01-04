@@ -7,7 +7,7 @@ const max = matrix => {
       list.push(inside);
     }
   }
-  // easy gggggggggggggggggggggggggggggggg
+  // gggggggggggggggggggggggggggggggg
   return list.reduce((acc, x) => acc > x ? acc : x);
 };
 
