@@ -12,4 +12,8 @@ const max = matrix => {
   return value;
 };
 
+/* one-line solution
+const max = matrix =>  Math.max(...martix.flat())
+*/
+
 module.exports = { max };
