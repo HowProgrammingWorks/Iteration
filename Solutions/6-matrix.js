@@ -13,7 +13,7 @@ const max = matrix => {
 };
 
 /* one-line solution
-const max = matrix =>  Math.max(...martix.flat())
+const max = matrix =>  Math.max(...matrix.flat())
 */
 
 module.exports = { max };
