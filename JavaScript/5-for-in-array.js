@@ -10,6 +10,8 @@ Object.defineProperty(numbers, 'newField', {
   value: 'valueOfNewField',
 });
 
+Object.prototype.inheritedProperty = 'inherited';
+
 for (const i in numbers) {
   const value = numbers[i];
   console.log(i, typeof i, value);
