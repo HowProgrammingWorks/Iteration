@@ -1,0 +1,16 @@
+({
+  name: 'sum',
+  length: [40, 60],
+  cases: [
+    [1, 2, 3, 6],
+    [0, 0],
+    [0],
+    [1, -1, 1, 1],
+    [10, -1, -1, -1, 7],
+  ],
+  test: sum => {
+    const src = sum.toString();
+    if (!src.includes('.reduce(')) throw new Error('Use reduce method');
+    if (src.includes('return')) throw new Error('Do not use return');
+  }
+})

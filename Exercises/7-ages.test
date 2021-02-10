@@ -1,0 +1,24 @@
+({
+  name: 'ages',
+  length: [150, 190],
+  cases: [
+    [
+      {
+        lenin: { born: 1870, died: 1924 },
+        mao: { born: 1893, died: 1976 },
+        gandhi: { born: 1869, died: 1948 },
+        hirohito: { born: 1901, died: 1989 },
+      }, {
+        lenin: 54,
+        mao: 83,
+        gandhi: 79,
+        hirohito: 88,
+      }
+    ]
+  ],
+  test: ages => {
+    const src = ages.toString();
+    if (!src.includes('for (')) throw new Error('Use for..in loop');
+    if (!src.includes(' in ')) throw new Error('Use for..in loop');
+  }
+})
