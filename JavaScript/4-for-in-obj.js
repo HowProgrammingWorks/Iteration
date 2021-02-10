@@ -14,6 +14,8 @@ Object.defineProperty(hash, 'newField', {
   value: 'valueOfNewField',
 });
 
+Object.prototype.inheritedProperty = 'inherited';
+
 for (const key in hash) {
   const value = hash[key];
   console.log(
