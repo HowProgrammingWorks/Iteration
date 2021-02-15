@@ -12,32 +12,24 @@ for (const value of numbers) {
 
 const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 arr[Symbol.iterator] = function() {
-  let index;
+  let index = 0;
   const step = 2;
   return {
     next: () => {
-      if (index === undefined) {
-        index = 0;
-        return {
-           value: this[index], 
-           done: false,
-        }
+      const result = {
+        value: this[index],
+        done: false
       }
-      if (index === this.length - 1 || index === this.length - 2) {
-        return {
-          value: this[index], 
-          done: true,
-        }
+      if (index >= this.length) {
+        result.done = true;
+        return result;
       } 
       index += step;
-      return {
-         value: this[index], 
-         done: false,
-      }
+      return result;
     }
   }
 }
 
-for (value of arr) {
+for (const value of arr) {
   console.log(value);
 }
