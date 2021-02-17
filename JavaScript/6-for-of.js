@@ -19,16 +19,16 @@ arr[Symbol.iterator] = function() {
       const result = {
         value: this[index],
         done: false
-      }
+      };
       if (index >= this.length) {
         result.done = true;
         return result;
-      } 
+      }
       index += step;
       return result;
     }
-  }
-}
+  };
+};
 
 for (const value of arr) {
   console.log(value);
