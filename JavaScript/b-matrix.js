@@ -10,7 +10,7 @@ const matrix = [
 const max = (a, b) => (a > b ? a : b);
 
 const res = matrix
-  .map(row => row.reduce(max))
+  .map((row) => row.reduce(max))
   .reduce((acc, rowMax) => acc + rowMax);
 
 console.log(res);

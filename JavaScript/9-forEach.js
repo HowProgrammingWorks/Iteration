@@ -5,12 +5,12 @@ numbers.forEach((item, i, arr) => {
   console.log(i, arr, item);
 });
 
-[7, 10, 1].forEach(x => {
+[7, 10, 1].forEach((x) => {
   console.log(x);
 });
 
-[7, 10, 1].forEach(x => console.log(x));
+[7, 10, 1].forEach((x) => console.log(x));
 
-const log = x => console.log(x);
+const log = (x) => console.log(x);
 
 [7, 10, 1].forEach(log);
