@@ -17,3 +17,5 @@ for (const i in numbers) {
   const value = numbers[i];
   console.log(i, typeof i, value);
 }
+
+console.log(numbers.newField)
