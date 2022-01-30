@@ -2,10 +2,10 @@
 
 const sum = (...args) => {
   let acc = 0;
-  let step = 0;
-  while (step < args.length) {
-    acc += args[step];
-    step++;
+  let i = 0;
+  while (i < args.length) {
+    acc += args[i];
+    i++;
   }
   return acc;
 };

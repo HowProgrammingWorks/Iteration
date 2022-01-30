@@ -3,7 +3,7 @@
 const ages = (persons) => {
   const result = {};
   for (const person in persons) {
-    const { born, died } = person;
+    const { born, died } = persons[person];
     result[person] = died - born;
   }
   return result;

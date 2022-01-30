@@ -2,11 +2,12 @@
 
 const sum = (...args) => {
   let acc = 0;
-  let step = 0;
+  let i = 0;
+  if (!args[i]) return 0;
   do {
-    acc += args[step];
-    step++;
-  } while (step <= args.length);
+    acc += args[i];
+    i++;
+  } while (i < args.length);
   return acc;
 };
 
