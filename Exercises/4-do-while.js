@@ -1,9 +1,13 @@
 'use strict';
 
 const sum = (...args) => {
-  // Use do..while loop and accumulator variable
-  // to calculate sum of all given arguments
-  // For example sum(1, 2, 3) should return 6
+  if (args.length < 1) return 0;
+  let sum = 0;
+  let count = 0;
+  do {
+    sum += args[count];
+  } while (args[++count] !== undefined);
+  return sum;
 };
 
 module.exports = { sum };
