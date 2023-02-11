@@ -10,7 +10,7 @@
   ],
   test: sum => {
     const src = sum.toString();
-    if (!src.includes('do {') || !src.includes('} while (')) throw new Error('Use while loop');
+    if (!src.includes('do {') || !src.includes('} while (')) throw new Error('Use do...while loop');
     if (!src.includes('let')) throw new Error('Use let to define accumulator');
     if (!src.includes('return')) throw new Error('Use return');
   }
