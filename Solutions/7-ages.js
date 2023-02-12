@@ -1,6 +1,6 @@
 'use strict';
 
-const ages = persons => {
+const ages = (persons) => {
   const data = {};
   for (const name in persons) {
     const person = persons[name];
