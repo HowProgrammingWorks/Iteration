@@ -1,6 +1,6 @@
 'use strict';
 
-const ages = persons => {
+const ages = (persons) => {
   // Use for..in to calculate age for each person
   // For example ages({
   //   lenin: { born: 1870, died: 1924 },
