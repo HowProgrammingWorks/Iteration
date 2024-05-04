@@ -2,9 +2,8 @@
 
 const sum = (...args) => {
   let answer = 0;
-  const len = args.length;
 
-  for (let i = 0; i < len; ++i) {
+  for (let i = 0; i < args.length; ++i) {
     answer += args[i];
   }
 
